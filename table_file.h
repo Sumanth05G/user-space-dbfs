@@ -26,7 +26,7 @@ int delete_column(char *filename,char* stringname);
 
 struct File_ID open_string_table_file(char*filename, char* row_name, char* column_name);
 
-int read_table(struct File_ID fid, void *buffer, size_t size);
+void* read_table(struct File_ID fid);
 
 int write_table(struct File_ID fid, void *buffer, size_t size);
 
