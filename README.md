@@ -58,7 +58,6 @@ To allow global usage of `#include <table_file.h>` in any program, we build a st
 ### 2. Building the Static Library
 Once the library and header are in place, you can use `#include <table_file.h>` in your programs. For example:
 `main.c`
-<pre> ```c #include <stdio.h> #include <table_file.h> int main() { struct File_ID fid = open_string_table_file("example.tbl", "Row1", "Column1"); if (fid.fd != -1) { printf("Table opened successfully!\n"); close(fid.fd); } else { fprintf(stderr, "Failed to open table file.\n"); } return 0; } ``` </pre>
 
 #### Compile:
 ```bash
