@@ -54,6 +54,9 @@ To allow global usage of `#include <table_file.h>` in any program, we build a st
 5. **Update the linker cache**:
    ```bash
    sudo ldconfig
+6. **Change Permission to permit read for all users**:
+   ```bash
+   sudo chmod 644 /usr/local/include/table_file.h
 
 ### 2. Building the Static Library
 Once the library and header are in place, you can use `#include <table_file.h>` in your programs. For example:
